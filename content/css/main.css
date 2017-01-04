@@ -1,0 +1,122 @@
+@font-face{
+    font-family: 'MainFont1';
+    src: url(../font/Comic_Sans_MS_Bold.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #67ff00;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'MainFont1', 'Times New Roman', 'Helvetica', 'Georgia', 'Vernada', 'Arial';
+}
+
+.bodydiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: #80bfff;
+}
+.bodydiv > div{
+    padding: 10px;
+    text-align: justify;
+
+    -webkit-transition: padding-left 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: padding-left 0.5s;
+}
+#parentdiv{
+    position: fixed;
+    top: 10px;
+    left: 320px;
+    overflow: hidden;
+}
+#parentdiv > div{
+    position: relative;
+
+    -webkit-transition: left 1s; /* For Safari 3.1 to 6.0 */
+    transition: left 1s;
+}
+#menu{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    background-color: #0080ff;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+
+    -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#menu > div{
+    padding: 10px 10px 10px 10px;
+    color: #ffffff;
+}
+
+#menu > div > a[href],
+#menu > div > a[href]:link,
+#menu > div > a[href]:visited,
+#menu > div > a[href]:link:visited{
+    color: #ffffff;
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
+    font-size: 30px;
+    text-decoration: none;
+}
+#menu > div > a[href]:hover,
+#menu > div > a[href]:active,
+#menu > div > a[href]:visited:hover,
+#menu > div > a[href]:visited:active,
+#menu > div > a[href]:link:hover,
+#menu > div > a[href]:link:active,
+#menu > div > a[href]:link:visited:hover,
+#menu > div > a[href]:link:visited:active{
+    font-size: 40px;
+
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
+}
+
+#menu > div > a[onclick]{
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
+    font-size: 20px;
+}
+#menu > div > a[onclick]:hover{
+    font-size: 150%;
+
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
+}
+
+.changepage{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000066;
+    font-weight: 800;
+}
+
+.changepage > a:hover,
+.changepage > a:visited:hover{
+    color: #ff0000;
+}
+
+p{
+    margin: 10px;
+}
+
+.bodydiv img{
+    border-radius: 10px;
+    margin: 10px;
+}
